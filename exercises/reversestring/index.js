@@ -32,3 +32,9 @@ function reverse(str) {
 }
 
 module.exports = reverse;
+
+// Keep in mind:
+// ------------
+// - Use “let” when ever variable value could possibly change.
+// - Traditional “for-loop”, “while-loop” works only when the condition 
+//   is true (& Breaks immediately when condition become false).

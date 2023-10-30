@@ -1,0 +1,31 @@
+1. Clone the Repository: https://github.com/StephenGrider/AlgoCasts
+2. Run ---> sudo npm install -g jest
+3. cd exercises
+4. jest fib --watch
+
+
+### DEBUGGING WITH JEST ###
+-->> DEBUGGER:-
+function reverse(str) {
+    let reversed = "";
+    for(var i = str.length -1; i >= 0; i--) {
+        reversed = reversed + str.slice(i, i+1);
+        // reversed = reversed ? reversed + str[i] : str[i];
+
+        // -- DEBUG CODE
+        // debugger;        // STEP 1: Add Debugger Statement
+    }
+    return reversed;
+}
+// reverse("marium");   // STEP 2: Call Function Manually
+module.exports = reverse;
+
+-->> In CMD:-
+cd fib
+node inspect index.js
+c (to continue)
+repl (repl to start inspection at that point)
+enter any variable used before debugger to check its value 
+c (may be multiple times when debugging in any loop) 
+repl (again inspect variables)
+exit
