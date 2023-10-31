@@ -18,25 +18,25 @@
 //       '####'
 
 function steps(n) {
-// // Solution 1:   STRING, ARRAY METHODS
-// // -----------------------------------
-for (let i = 1; i <= n; i++) {
-  console.log("#".repeat(i).concat(" ".repeat(n - i)));
-}
+  // // Solution 1:   STRING, ARRAY METHODS
+  // // -----------------------------------
+  for (let i = 1; i <= n; i++) {
+    console.log("#".repeat(i).concat(" ".repeat(n - i)));
+  }
 
-// // Solution 2:   FOR-LOOP; Iterate each Character
-// // ----------------------------------------------
-// for (let row = 1; row <= n; row++) {
-//   let stair = "";
-//   for (let col = 1; col <= n; col++) {
-//     if (col <= row) {
-//       stair += "#";
-//     } else {
-//       stair += " ";
-//     }
-//   }
-//   console.log(stair);
-// }
+  // // Solution 2:   FOR-LOOP; Iterate each Character
+  // // ----------------------------------------------
+  // for (let row = 1; row <= n; row++) {
+  //   let stair = "";
+  //   for (let col = 1; col <= n; col++) {
+  //     if (col <= row) {
+  //       stair += "#";
+  //     } else {
+  //       stair += " ";
+  //     }
+  //   }
+  //   console.log(stair);
+  // }
 }
 
 // // Solution 3:   RECURSIVE FUNCTION
@@ -60,4 +60,4 @@ module.exports = steps;
 // ------------
 // - RECURSIVE FUNCTION --- On Completing one stair:
 //   1- Show the Result it in Console...
-//   2- Return the new function to end the previous stair... 
+//   2- Return the new function to end the previous stair...
